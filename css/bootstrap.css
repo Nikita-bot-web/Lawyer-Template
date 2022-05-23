@@ -6603,6 +6603,9 @@ button.bg-dark:focus {
 .text-white {
   color: #7B6A69 !important; }
 
+.text-super-white {
+    color: #fff !important; }
+
 .text-primary {
   color: #3292a6 !important; }
 
