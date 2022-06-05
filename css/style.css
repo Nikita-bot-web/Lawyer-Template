@@ -2,7 +2,7 @@ body {
   margin-top: 105px; }
 
 .navbar {
-  box-shadow: 2px 2px 5px #3292a6;
+  box-shadow: 2px 2px 5px #115ca1;
   opacity: 0.9;
   background: #fff; }
   .navbar .nav-item {
@@ -26,6 +26,27 @@ body {
   margin: auto;
   border-bottom: 1px #ddd solid; }
 
+.text-color {
+  color: #47423f
+    }
+
+.navbar-bg-color {
+background-color: rgba(237, 214, 201, 1)
+  }
+
+.contactForm-sm-bg-color {
+  background-color: rgba(237, 214, 201, 1)
+    }
+
+.ourClinets-bg-color {
+  background-color: #7b6a69;
+}
+
+.about {
+  background-color: rgba(237, 214, 201, 1)
+}
+    
+     
 #titleImage{
   margin-top: 30%;
 }
