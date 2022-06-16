@@ -9,6 +9,7 @@
     crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Bootstrap Theme</title>
 </head>
 
@@ -347,18 +348,33 @@
   <!-- CONTACT -->
   <section id="contact" class="bg-light py-5">
     <div class="container">
-      <div class="row">
+      <div class="row justify-content-md-center">
         <div class="col-lg-9">
-          <h3 class="text-color">Get In Touch</h3>
-          <p class="lead text-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, temporibus!</p>
           <form>
+            <h3 class="text-color text-center mb-4">Как нам связаться с Вами?</h3>
+            <div class="input-group input-group-lg mb-3">
+              <div class="col-auto mr-auto">
+                <label for="exampleFormControlSelect1" class="lead text-color md-2">В какое время  вам удобно?</label>
+              </div>
+              <div class="form-group form-control">
+                <select id="exampleFormControlSelect1">
+                  <option>9:00</option>
+                  <option>12:00</option>
+                  <option>14:00</option>
+                  <option>17:00</option>
+                  <option>19:00</option>
+                </select>
+              </div>
+              <input type="date" class="form-control" id="start" name="trip-start" min="2022-01-01" max="2050-12-31">
+            </div>
+
             <div class="input-group input-group-lg mb-3">
               <div class="input-group-prepend">
                 <span class="input-group-text">
                   <i class="fas fa-user"></i>
                 </span>
               </div>
-              <input type="text" class="form-control" placeholder="Name">
+              <input type="text" class="form-control" placeholder="Как к вам обращаться?">
             </div>
 
             <div class="input-group input-group-lg mb-3">
@@ -367,7 +383,16 @@
                   <i class="fas fa-envelope"></i>
                 </span>
               </div>
-              <input type="text" class="form-control" placeholder="Email">
+              <input type="text" class="form-control" placeholder="Ваша электронная почта">
+            </div>
+
+            <div class="input-group input-group-lg mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fas fa-envelope"></i>
+                </span>
+              </div>
+              <input type="text" class="form-control" placeholder="Ваша номер телефона">
             </div>
 
             <div class="input-group input-group-lg mb-3">
@@ -376,15 +401,11 @@
                   <i class="fas fa-pencil-alt"></i>
                 </span>
               </div>
-              <textarea class="form-control" placeholder="Message" rows="5"></textarea>
+              <textarea class="form-control" placeholder="Ваш вопрос (Вы можете указать тему. Все детали мы уточним во время звонка)" rows="3"></textarea>
             </div>
 
             <input type="submit" value="Submit" class="btn btn-primary btn-block btn-lg">
           </form>
-        </div>
-
-        <div class="col-lg-3 align-self-center">
-          <img src="img/WomanPhoto.jpg" alt="" class="img-fluid">
         </div>
       </div>
     </div>
@@ -393,24 +414,52 @@
   <!-- FOOTER -->
   <footer id="main-footer" class="py-5 bg-dark text-white">
     <div class="container">
+      <h3 class="text-color-white text-center mb-4">Связаться с нами:</h3>
       <div class="row text-center">
         <div class="col-md-6 ml-auto">
           <p class="lead text-color-white">
+            Напишите нам на почту: examle@mail.ru
+            Позвоните нам: +380 758 123 45
+
+
             Copyright &copy;
+            
             <span id="year"></span>
           </p>
-         <h3><p class="lead text-color-white">
-          Kontakt
-        </p></h3>
-        <h5><p class="lead text-color-white">
-          +321548458
-        </p></h5>
+        <h3>
+           <p class="lead text-color-white">
+          Напишите нам в социальных сетях
+          </p>
+        </h3>
+        <i style="font-size:24px" class="fa">&#xf16d;</i>
+        <i style="font-size:24px" class="fa">&#xf189;</i>
+        <i style="font-size:24px" class="fa">&#xf2c6;</i>
         </div>
         <div class="col-md-6 ml-auto">
-          <p class="lead text-color-white">
-            Copyright &copy;
-            <span id="year"></span>
-          </p>
+          <div class="input-group input-group-lg mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">
+                <i class="fas fa-user"></i>
+              </span>
+            </div>
+            <input type="text" class="form-control" placeholder="Как к вам обращаться?">
+          </div>
+          <div class="input-group input-group-lg mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">
+                <i class="fas fa-user"></i>
+              </span>
+            </div>
+            <input type="email" class="form-control" placeholder="Ваша электронная почта">
+          </div>
+          <div class="input-group input-group-lg mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">
+                <i class="fas fa-user"></i>
+              </span>
+            </div>
+            <textarea class="form-control" placeholder="Ваше сообщение"></textarea>
+          </div>
         </div>
       </div>
     </div>
@@ -450,3 +499,9 @@
 </body>
 
 </html>
+
+<!--
+  <div class="col-lg-3 align-self-center">
+          <img src="img/WomanPhoto.jpg" alt="" class="img-fluid">
+        </div>
+-->
